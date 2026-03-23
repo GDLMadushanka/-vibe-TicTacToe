@@ -1,6 +1,8 @@
 # Tic Tac Toe — VS Code Extension
 
-A polished Tic Tac Toe game playable directly inside VS Code's sidebar. Challenge the AI at two difficulty levels — or give it your best shot on Hard mode where the AI never loses.
+A polished Tic Tac Toe game playable directly inside VS Code's sidebar. Challenge the AI at two difficulty levels
+
+Medium - beatable, or give it your best shot on Hard mode, where the AI never loses.
 
 ## Features
 
@@ -22,8 +24,8 @@ A polished Tic Tac Toe game playable directly inside VS Code's sidebar. Challeng
 ## Installation
 
 ```bash
-git clone <your-repo-url>
-cd tictactoe-vscode
+git clone https://github.com/GDLMadushanka/-vibe-TicTacToe.git
+cd -vibe-TicTacToe
 npm install
 ```
 
