@@ -1,0 +1,43 @@
+{
+  "name": "tictactoe-vscode",
+  "displayName": "Tic Tac Toe",
+  "description": "Play Tic Tac Toe against an unbeatable AI in VS Code",
+  "version": "1.0.0",
+  "publisher": "your-publisher-id",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["game", "tictactoe", "minimax", "fun"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "tictactoe-container",
+          "title": "Tic Tac Toe",
+          "icon": "resources/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "tictactoe-container": [
+        {
+          "type": "webview",
+          "id": "tictactoe.gameView",
+          "name": "Game"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "typescript": "^5.3.3"
+  }
+}
